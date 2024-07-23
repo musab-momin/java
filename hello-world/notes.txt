@@ -1,0 +1,78 @@
+Java is a object oriented programming language. It runs on any machine which has JRE on it. 
+
+The hello world ?
+> To write your first program in java you need to create a file and use the extension (.java). There is 
+  no such naming convention which you need to follow.
+> Inside that file you need some boiler plate code. Like you need a class and a main method. well what are these 
+
+What is a class ? 
+> As java is object oriented language. You need objects to any thing inside java. Even for printing hello world.
+  To create object you need class. class is like a blue print of your functionalities. will look into deep in this
+  later on.
+
+What is main ? 
+> In your java project you may have multiple files but java needs a start point to start the execution from and 
+  the starting point for java is your main() method.
+> Any file which has main() file. java fill start it's execution from it. Well that is not enough for main() method
+  As our main method also has some boiler plate code. Will look into this in deep but later.
+
+What is Java compiler ?
+> Well now you have a class with main method and you want to run it but wait your computer does not understand
+  your english language code. 
+> Particularly in java we give our code to JVM (Java virtual machine). But this expect the byte code and that 
+  is what our JavaCompiler do, it convertes our code into byte code so that JVM can execute it.
+
+What is Java Virtual Machine(JVM) ?
+> The JVM is an abstract computing machine that enables a computer to run Java programs. It's responsible for 
+  interpreting the compiled bytecode and executing it on the host machine. The JVM provides a platform-independent 
+  way of executing code, which is one of the core reasons Java is so portable.
+> 1: Compilation: When you write Java code, it is first compiled by the Java compiler (javac) into bytecode. 
+     This bytecode is a low-level set of instructions that is platform-independent.
+> 2: Class Loader: The JVM uses a class loader to load the compiled bytecode into the JVM runtime environment. 
+     This loader is responsible for finding and loading the class files.
+> 3: Bytecode Verifier: After loading, the bytecode verifier checks the code for any illegal code that 
+     could violate access rights to objects.
+> 4: Execution Engine: The execution engine of the JVM then executes the bytecode.
+> 5: Garbage Collection: The JVM automatically handles memory management through garbage collection. 
+     It identifies and disposes of objects that are no longer in use, freeing up memory resources.
+
+Java Source Code (.java)
+        |
+        v
+Java Compiler (javac)
+        |
+        v
+Java Bytecode (.class)
+        |
+        v
+JVM
+  |--------|
+  | Class Loader  |
+  |--------|
+  | Bytecode Verifier  |
+  |--------|
+  | Execution Engine  |
+  |    (Interpreter/JIT)    |
+  |--------|
+  | Memory Management |
+  |  (Garbage Collection)  |
+  |--------|
+        |
+        v
+Native Machine Code
+        |
+        v
+Execution on Host Machine
+
+
+What is Java Run Environment(JRE) ? 
+> Well you have write your hello world program but for doing this you have used System.out.println().
+  Where this System class came from you didn't wrote that. That is something your JRE provides you. 
+  It gives you all the required classes and packages which you need for application. That is just a one thing 
+  about JRE.
+> JRE is something which provides the environment for execution of java code. JVM is also a part of JRE. 
+> Apart from above 2 things JRE have something called class loader. This is what loads the classes for 
+  other part of your code. which needs some classes needs for their work.
+> JRE also has some run time environment stuff like such as the Java launcher (java), 
+  which starts the Java application.
+
