@@ -1,0 +1,42 @@
+What is casting ?
+> As we know Java is staticly typed language. which means we have to specify the type of variable before 
+  initialisation. 
+> What if you define a variable in type x and later on you want to convert in type y, is it possible! umm,
+  yes it is possible and when you do this type conversion explicitly (by your own) then this is known as 
+  type casting. 
+> All though changing of variable type is possible but you can not convert any type of variable to any other type
+  in the case of primitive value.
+> Let's just check the example of type casting, 
+ 
+  int i = 56;
+  byte b = (byte) i;
+
+What is conversion ?
+> As it's name suggest, when you convert the type of varaible it is known as conversion but wait what's the 
+  difference then. The difference in conversion you don't do this by your own or explicitly, conversion is something
+  which happens implicitly (in other words java did this for you).
+> example
+
+  byte b = 126;
+  int i = b;
+
+> here you assigned the byte to int and you didn't mentioned it like you did in type casting (byte).
+> Another example could 
+
+ int i = 10;
+ double d = i;
+
+> You will get the result as 10.0 as java convert int into double for you implicitly. 
+
+
+What is type propotion ?
+> This is also as it sounds like you are getting promotion and when you get promoted you go from low to high.
+  simillarly in java can promot you to higher data type like from short to int and from int to double. 
+> But java does not randomly promote any variable the condition is during the runtime or after some operation 
+  if the result is getting out of the range of operational variables to prevent program from crashing Java does 
+  this type propotion.
+> Let's take an example suppose you have to type variable 
+  byte a = 10; byte b = 30; and you have performed multiplication with these two variables 
+  a * b it will give you a result which is 300 and 300 is out of the range of byte so java will promot the result
+  variable into int. 
+
