@@ -1,0 +1,104 @@
+what is class ?
+> As java is Object Oriented Programming language. Every thing in java needs to be an object. Objects are 
+  pyhical or in other word it exist objects can not be abstract.
+> In real world to create any object lets say you want to create a coffee mug. for that you need a design or a 
+  blueprint. This blueprint will give you the details for your object like how it should look like it's hight and
+  width and color etc. 
+> A blueprint of a object is called as Class in java. Exactly like real world blueprint our Class will have 
+  all the properties and functionalities for our object. 
+> So basically Class contains two things 
+  1) Properties
+  2) Methods
+> Properties are very much clear. Consider you have a Class call Calcultor and it is blue print for calculator. 
+  What properties does a calculator has, price, color, size and etc. We can define all these properties by 
+  variables, make sense! So all the variables inside a Class is called properties of a perticular Class.
+> Methods: Method is a programing term in simple language methods are actions. We define the actions or operations
+  which we want our class to have inside a method. Each method should only perform a single action. Let's continue
+  with our calculator example what are some actions that a calculator can perform. Addition, Substraction, 
+  Multiplication and Devidation etc. 
+> Let's see how to define method. 
+    1)  First you have to define the return type of your method. When we do some action
+        we always get's some result right similarly when our method going to perform a action we also going 
+        to get some result and as Java is a staticly typed language we have to define the type of it, that's 
+        why for defining method first we need to write the return type for it, like int, char, boolean, double.
+    2)  Second you have to give a name to your method. In our calculator example we want to make a method which 
+        perform addition on two number. So we will name it as `add()`. 
+    3)  Methods can take parameter also, consider parameters are like dependacy of method. If you want to 
+        perform additon for that you need 2 numbers right, so we can say that our add() method is dependent on two
+        numbers. Well you can say that those 2 numbers can define inside the Calcultor class and we can use it 
+        from there also. You are right we can do that. That is why I said Parameters are optional. method can and 
+        can not have parameter. Syntax for method with parameter is this 
+          int add(int x, int y){}
+        our add() method takes two parameter x and y of type int and remember A method can take n number of 
+        parameters.
+> To consume class and use methods we need to create a object from class. Just like in real world you can not 
+  use blueprint you need a object created based on blueprint. similarly in Java to use Class we need object.
+> To create a object from class we need `new` keyword. This `new` keyword will create a object from your class
+  and give it back to you. To store the given object from `new` keyword we need a variable and type for this 
+  variable needs to your class. This type of varaibles are called reference varaible.
+
+  Calcultor c = new Calcultor();
+
+> As now we have some sort of idea about methods, let's just understand to types of method now.
+  1) Constructor
+  2) Abstract method
+> Constructor: This is special type of method, in fact we normally call this Constructor we do not even call this 
+  method. Unlinke normal method you can not name it whatever you want but instead construtor should have 
+  same name as it's class. If your class name is Calculator then construtor must be name as Calculator. 
+  constructor does not have return type and we don't have to call constructor unlike other method. Then what's the
+  use of it, so remember I said we don't have to call constructor but Java call this constructor while creating
+  the object. 
+
+  new Calculator()
+
+  > this Calculator() behind the scenes call the constructor method of class. constructor methods are required 
+    method in class but what if you don't define the constructor, In this case java will define the constructor
+    method without any parameter for you.
+  > Constructor methods are mainly used for setting values to class variables. 
+  > We can have multiple constructor in a single class but with different parameter. For example you can have
+    2 constructor methods inside a single class but 1 constructor does not have any parameter and another 
+    constructor takes any number of and any type of parameter. Okay so you have 2 constructor so which when will
+    be get's called on object creation, it is actually very simple, If you provide parameter on object creation
+    then constructor with parameter get's called, If you provide no parameter on object creation then constructor
+    with no parameter gets called.
+
+    NOTE: Remember you can not have 2 constructor with same parameters. It will give you error.
+
+> Abstract: Abstract method is also a special type of method but it is not as special as constructor mehtod ;). 
+  If you have a method which only has a signature but does not have body it is called as Abstract method. 
+  It may or may not take parameter it is up to us how we want to define the method.
+  Yes the obvious question is why do even need such method who do nothing. Well this is question for future 
+  I mean will tackle this question when we will learn about inheritance.
+  
+  void abstractMethod() {}
+
+> Same methods we also have different types of classes. 
+    1) Abstract Class
+    2) Nested Class 
+    3) Enum Class
+
+> Abstract Class: Same as method, abstract class does not do what normal does. Like we have class so that we can
+  create objects from it. Well you can not create objects from abstract class. Again you would ask then why do 
+  we have this and I will say this again this is question for future I mean will tackle this quesiton when we 
+  will learn aobut inheritance.
+
+> Nested Class: As we learnt in the class that class can have properties and methods, well class can have 
+  another and multiple class inside it. In simple word class inside a class is called nested class.
+  we have also have two different kind of nested classes:
+  1) Static nested class
+  2) Normal nested class
+
+  > Static nested class: Static class is also a class inside another class but it does not require the 
+    outer/closing class instance to instantiate itself. It may be confusing let's break it down further 
+    So we know that to access anyting which is inside the class we need object of that class right well this 
+    statement has 2 exception: 1st is we can access static members of class without it's object and 
+    2nd is static class. We can directly instantiate (create a object) of innerStatic class without the 
+    object of outer class. Static inner class can not access any non static member of outer class.
+
+  > Normal nested class: Well there is nothing to discuss in this case because this is litrely a class which is 
+    inside of another class. Nested class can access static and non static variables of outer class. 
+    Well one thing which we need to be aware off Nest class varaibles and methods over shadow the outer class 
+    variables and methods. What does over shadow means, In simple words if we have 2 variables in outer
+    and nested class with same name let's the varaible name is `x` and outer class has x = 2 and 
+    nested class has x = 4 then inside neseted class If you try to access variable `x` then you will get the value 
+    from the nested class which is 4. Like this your inner/nested class variable overshadow the outer variable.
