@@ -55,7 +55,7 @@ class Outer {
 
 class NestedClass {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Outer.StaticInner si = new Outer.StaticInner(3.9f);
         si.printer();
         si.printPi();

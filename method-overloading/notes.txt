@@ -1,0 +1,17 @@
+What is method overloading ? 
+> Methods which has same name but different type or different number of parameter is called method overloading.
+> Imagin you have a class Calculator and you want to add 2 numbers, so do that you created a method named add()
+  it takes 2 parameter of type integer add(int x, int y). Yeah, problem solved! but later on you decided you 
+  want to add 3 numbers so you update your method and make like this add(int x, int y, int z) but now 
+  you can't use it for adding 2 numbers. That's is when method overloading somes handy, you can say that we can 
+  create another method which takes 3 numbers and add them, well you can but think for that you have to maintain
+  2 different method which does the same operation. It is not something optimal or ideal. 
+> A method can be overload If they must have same name but different number of parameter or different type of 
+  parameter, In our existing example if we create another add() method which takes 2 parameters but 1 parameter 
+  is of type double that also a method overload because that method has different type of parameter 
+  add(double d, int i).
+> We can also do overloading with static methods, yes that is totaly possible.
+> We can also mix static methods with normal method in overloading, for example you can have 2 static methods and
+  1 normal method with same name and different parameters but this is not recomemded.
+> We can also do this with abstract methods and also with constructor and we already discussed this in 
+  class and method lecture.
