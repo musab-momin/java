@@ -1,0 +1,17 @@
+What is static block ?
+> Before understanding static block we must first understand what is block. block is container which contains 
+  multiple line of code. Then what is static block, Static means something which belongs to class not to the 
+  object of class. So a Static block is a block which belongs to class and often use to set values to 
+  static variables of class. 
+> We can have multiple static blocks they got called in the order they are present inside the class.
+> Static blocks get's called even before the constructor. That is because whenever we create object for class 
+  2 things happens under the hood:
+  1) Class gets loaded
+  2) Object has been instantiated
+  NOTE: 1 step happens only for the first object creation, if you create multiple objects of same class the class 
+        will not gets load every time. It will be loaded only for the first time.
+> After the class loads it calls static blocks that is the reason why static blocks gets called even before 
+  constructor method and only get's called for one time. 
+> We can invoke the static block or called load your class without creating object. For that we have one inbuild
+  class named as `Class` this clas has one method called `forName()`. If you call this method it will load your 
+  class and your static block will get called.
