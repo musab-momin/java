@@ -1,0 +1,32 @@
+what is array ? 
+> Array is fixed length collection of similar type of variables, items or object. 
+> We have 2 syntax to define array. 
+    int[] arr = {2, 3, 4};
+    int[] arrObj = new int[5];
+> As array is of fixed sized in 1st sytanx it will take the length for array from how many elements does we 
+  insert in the start. The 2nd sytanx is of defining object, in this case we must have to tell java the size of 
+  array. 
+> Array is not a primitive type it is a reference or instance type that's why it's content does not saved of 
+  stack memory it is saved on heap memory and stack will have it's reference. 
+> We can not add more elements then defined length and we can not have multiple types of elements inside a 
+  single array. 
+> We don't have any method to add elements into array, we have to use the index for adding element into array. 
+
+What is multi dimensional or 3D array? 
+> If we have single or multiple array(s) inside of array it is called multi demensional array.
+> We can have n number of dimension in single array. 
+> To define the dimension of array we have to use `[]` square brackets. Like for normal or single dimensional 
+  array we use single pari for square brackets [], so for two dimensional array we have to use 2 paris for square 
+  brackets and for three dimensional array we have to use 3 paris for square brackets and it's go's on.
+> Like in a single dimensional array we must have to define the length of array but for other dimensions we have 
+  a choice to define the length on initialisation or later on, it's up to us.
+  int[][] twoDimensionalArr = new int[4][];
+  > In above example we didn't define the length for second dimension. It means for each index of outer array
+    we can have any length of array. 
+    twoDimensionalArr[0] = new int[3];
+    twoDimensionalArr[1] = new int[4];
+    twoDimensionalArr[2] = new int[5];
+    [[2, 4, 6], [20, 40, 60, 80], [200, 400, 600, 800, 1000]]
+  > As we can see, we have length of 3, 4 and 5, I mean different length of array at each index.
+  > This type of array is called Jacked array but if you define the lenght of other dimensions also then it will
+    be normal multi dimensional array.
