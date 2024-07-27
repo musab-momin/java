@@ -1,5 +1,6 @@
 
 public class Main {
+
     public static void main(String[] args) {
         // normal single dimensional array
         int[] arr = { 2, 4, 5 };
@@ -19,8 +20,8 @@ public class Main {
         }
 
         // multidimensional array
-        int[][] twoDimensionalArr = { { 2, 3, 4 }, { 23, 33, 44 }, { 321, 235, 876 }
-        };
+        int[][] twoDimensionalArr = { { 2, 3, 4 }, { 23, 33, 44 }, { 321, 235, 876 } };
+        System.out.println(twoDimensionalArr[0] + " : " + twoDimensionalArr[1] + " : " + twoDimensionalArr[2]);
 
         int[][] twoDimensionalArrobj = new int[3][];
         twoDimensionalArrobj[0][0] = 2;
@@ -41,8 +42,7 @@ public class Main {
 
         for (int outer[] : twoDimensionalJackedArr) {
             for (int ele : outer) {
-                System.out.print(ele);
-                System.out.print(" ");
+                System.out.print(ele + " ");
             }
             System.out.println();
         }

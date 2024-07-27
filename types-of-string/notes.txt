@@ -1,0 +1,46 @@
+what is string ?
+> String is a very common type in programming. A string basically a collection of characters. 
+> In Java String is not a primative type it means String is class.
+> As we know to consume/use any class we have create a object of it. So for defining a String syntax will be:
+  String s = new String("New York");
+> As I said String is a very common type in programming that's why we also have 1 short hand sytax for defining 
+  String in Java.
+  String name = "Eliot";
+    > This syntaxt first creates it's object and assign that value to variable, which is:
+      String name = new String("Eliot");
+    > Behind the scene Java do this for us.
+> As String is object and all the values for Object are stored in Heap memory and in stack we just have a memory 
+  address for object. This is also same in String case but As string is so special and popular we just not store
+  String any where in Heap instead of that we have separate space in Heap memory called `String Constant Pool`
+> If you payed attention on name where string stored is `String Constant Pool` it says constant. That is because  
+  in Java Strings are constant or immutable in simple words you can not change the value of your String variable
+  once you assigned it. 
+> To understand this in deep will one example here. 
+  String name = "Eliot";
+  name = name + " alderson";
+  System.out.print(name); 
+  output: Eliot alderson
+> By first seeing this we can say that the String is changing or mutating but that is not the case. We know the 
+  String values are stored in String Pool in Heap memory in Stack we have only it's reference. So when you 
+  do this `name = name + " alderson", Java will create new value in String pool `Eliot alderson` and it's 
+  address will be updated in stack memory. So as you see we didn't updated the String rather we created a 
+  new String value and update the referance in stack memory.
+
+What is StringBuffer ?
+> StringBuffer is also a String which is collection of characters but unlike String StringBuffer is mutable. 
+  We can change the value of Strinbuilder's variable/object. 
+> We have different methods available which we can use to mutate/change the value. 
+> By default we have 16 characters capacity for StringBuffer object. Which means we can store upto 16 characters 
+  in a Buffer Object. If you give value during initialisation then default buffer size will be string length + 16
+  but what if we want to store more characters, well we don't have to worry about that we just add the characters 
+  how many we want to store in BufferObject when the capacity is surpassed Java will automatically increase 
+  the Buffer Capacity.
+> StringBuffer is synchronus which makes it thread safe.
+
+
+What is StrinBuilder ?
+> It is exactly same as StringBuffer but the only difference it Stringbuilder is asynchronus which makes it 
+  not safe for threads.
+
+
+

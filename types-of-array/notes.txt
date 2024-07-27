@@ -11,6 +11,7 @@ what is array ?
 > We can not add more elements then defined length and we can not have multiple types of elements inside a 
   single array. 
 > We don't have any method to add elements into array, we have to use the index for adding element into array. 
+> Not only primitive type we can add custom or reference type variables or object into array.
 
 What is multi dimensional or 3D array? 
 > If we have single or multiple array(s) inside of array it is called multi demensional array.
