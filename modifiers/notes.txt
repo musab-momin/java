@@ -1,0 +1,25 @@
+what is package ? 
+> In Java we called folder as package. Java has there own many packages and we can define our own packages also.
+> By default we have Java.lang.* package imported in every Java file. It is not visible by Java will add this folder
+  us. That is why we don't add any import statement in our file for using System.out.print(). This sout is 
+  also a file of Java.lang.* package.
+> To import other package into our file we have to write `import` keyword and the package name. 
+> We can import n number of packages inside a single Java file.
+> If you want to publish you package to on internet you have must name your package unqiue. To keep name unique 
+  we often use our domain name is reverse order. e.g: com.mr-robot.penitrate.
+  penitrate is our package and we prefix it with reverse of our domain.
+
+What are access modifiers ?
+> Access modifiers are some keyword which handles the visiblity of variable or method. 
+> In Java we have 4 access modifiers:
+    1) default: To give default access to your variable or method we don't have any keyword. Keep it blank 
+                it will become default. On default variable will be accessable only on same package. 
+    2) public: To give public access to your variable or method we use `public` keyword. On public your 
+               variable or mehtod will be available everywhere, In other word it will be available 
+               inside or outside the class, inside or outside of the package. 
+    3) private: To give private access to your variable or method we use `private` keyword. On private your
+                variable or method will be available only inside the class apart from this private will not be 
+                visile anywhere.
+    4) protected: To give protected access to your variable or method we use `protected` keyword. On protected your
+                  variable or method will be available inside the class and outside class to only those class 
+                  which inherit our class. Out the package protected will not be visible.
