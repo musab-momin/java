@@ -1,0 +1,21 @@
+what is Inheritance ?
+> Inheritance is core concept in OOP, it is similar as real world inheritance. Like in real world children 
+  inherite many things from their parents for example looks, habits, medical issues and properties. 
+> In Java also one class can inherite another class by doing this that base class will get access to every thing
+  of super class including it's variables, classes and methods. 
+> In Java we have 2 types of inheritance
+    1) Single level inheritance
+    2) Multi level inheritance
+> Single level is very clear a class extends another class. 
+> Multi level is suppose class we have 3 classes GrandParent, Parent, Children, Parent class inherit GrandParent 
+  class this is single level inheritance and Children class inherit Parent class now because Parent class also 
+  have inherited another class this Children class will get all the properties and methods of both Parent and 
+  GrandParent class, this is Multi Level Inheritance.
+> To perform inhertance we just have to use `extends` keyword and have to mention the class name which we want 
+  to inherit.
+  
+  class Children extends Parent{}
+
+> Important thing to keep remember is Java does not support multiple inhertiance in simple word in Java a class 
+  can not extends or inherit more then 1 class at a time. You have to do jugad if you want to achive this but 
+  by default Java does not supports Multiple Inheritance.

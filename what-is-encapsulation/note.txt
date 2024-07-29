@@ -1,0 +1,14 @@
+what is encapsulation ?
+> Encapsulation is one of the core concepte of Object Oriented Programming. Normally encapsulation is mean
+  `Restricting direct access to something`. In programming also it works in the same way. Consider a class 
+  which has some properties and methods and we as a programmer it is our duty to make sure these properties and 
+  method should be private to that class only but It does not mean any thing outside this class can't access 
+  these things no they can but they need to ask that class for it. In real world also if you own something and 
+  someone wants that thing they ask you and you gave to them.
+> In Java we have some access modifier public, private, protected etc. will discuss this later for implementing
+  privacy in class we make our properties and method as private. You just have to give the private access modifier 
+  to anything which you want to make private. 
+> But what if you want this to be access by outer class or world. To do so we make methods to set the values for
+  our property called setters and to get properties we also have method which we call as 'getters()'.
+> In case of methods if you made method private it will not available outside that classs. Even if some other
+  class inherit class that base class also does not have any access to this private method.

@@ -1,0 +1,34 @@
+What is super() ?
+> super() is special method which is given by Java to us, it call the parent or super class of existing class. 
+> In Java we have a concept called `Inheritance` because of which one class can extends or take method and 
+  properties of super or parent class. 
+> This super() method calls the constructor of parent class. We don't need to define the super() method inside a 
+  class it is there just like constructor If we don't define constructor Java gives us the default constructor 
+  with no parameters similarly Java creates the super() method inside every constructor we create.
+> By default super() method calls the constructor which has no parameters but what if we want to call the 
+  parameterised constructor of parent classs. In that case we have to write super(parameter) with parameter and
+  then Java it will call the parameterised constructor of parent/super class.
+> We also have this() method this will prevent our constructor from calling the parent constructor and it will 
+  call the constructor of this same class. 
+> To understand the above point let's consider a example, suppose you have class called Bird and it has two 
+  constructor one with parameter and one without any parameter and this class extends a class named Bird.
+
+  class Eagle extends Bird {
+     Eagle() {
+        //normal constructor
+     }
+     Eagle(String name) {
+        //parameter constructor
+     }
+  }
+
+> Whenever you create a object from using any of these constructor by default because of super() method each 
+  constructor will call the constructor of parent class but if you use this() method it will call the 
+  constructor of same class which is Eagle. For example if you call this() method inside parameterised constructor
+  it will call the normal constructor of Eagle class and Java will not add super() method in this case.
+  similarly if you called this("Eagle") method inside normal constructor it will not call the constructor of 
+  parent class instead of that it will call the parameterised constructor of same class (Eagle).
+
+> Nested class also extends another class in other words nested classes can also do Inheritance and they 
+  will also called the constructor of extended class.
+  
