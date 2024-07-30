@@ -1,0 +1,19 @@
+what is abstract ?
+> abstract is keyword in Java. It can be used with class and method. 
+> It is used to add abstraction on classes and methods. 
+> Adding abstration to method means we don't need to provide defination/logic for our method once we declared it
+  as abstract. To define abstract method we need class to be abstract. The logic and defination of method will be
+  provided by the class which inherite this abstract class it is mandatory for base class to add implementation 
+  of all the abstract methods of super class.  The obvious question is when we don't want defination/logic inside 
+  a method then why are we writing it, this is right but in certain condition it is useful suppose you want To
+  make sure that which ever class implements your class should have some methods and those methods need dynamic
+  implementation. For example you have a BankAccount class and you want every base class to implement credit and
+  withdrawn methods and we know these two operations has different behaviour in different types of BankAccounts. 
+> Syntax for defining abstract method is:
+  protected abstract void withDrawn();
+> As I said to define abstract methods we need to mark/make our class also abstract. 
+> We can not create object of Abstract classes. It can be inherited and base class must have to provide 
+  implementation for all the abstract methods of super class. 
+> Abstract class can also contains normal methods. 
+> Syntax for abstract class is:
+  public abstract class class_name{}
