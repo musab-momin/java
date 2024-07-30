@@ -1,0 +1,12 @@
+what is method overriding ?
+> As we know Java supports inheritance becuase of inheritance base class gets all the methods of parent class. 
+  Now if think all the method names which were used in super class can not be used in  base class that will create
+  amiguity right! To solve this problem Java has a feature called method overriding, If base class has a method 
+  which has same name as super class method the base class method will override parent class method. In other 
+  words base class method will provide it's own defination so when you create a object of base class and tries to 
+  call that method it will call the method of base class. This is called method overriding.
+> But what if you want to call the super class method, you can do this by using `super`. We can call or use any 
+  property or method of super/parent class using super. In our case will do something like this: 
+   super.method_name();
+> Object will call which class method it is decide on runtime by Java. That is why method overriding also known 
+  as RuntimePlymorphism.
