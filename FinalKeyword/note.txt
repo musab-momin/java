@@ -1,0 +1,6 @@
+What is final ?
+> final is special keyword in Java which can be used with variables, methods and classes. 
+> If you use final with variable it will become constant, in other words now you can not change the value of it.
+> If you use final with class it will prevent the inheritance, in other words final class can not be inherited.
+> If you use final with method it will prevent method overriding, in other words final method can not be 
+  overridden in base class.

@@ -1,0 +1,10 @@
+what is polymorfism ? 
+> polymorfism means `many forms`,  is a concept in object-oriented programming that allows one interface to be 
+  used for a general class of actions. In simpler terms, polymorphism allows you to perform a single action 
+  in different ways.
+> We have 2 types of polymorfism in Java: 
+    1) CompileTime Polymorphism: Method overloading is a example of it. During the compile type Java will decide 
+       which method is going to be called. As you know in method overloading we have 2 methods with same names and
+       each will perform different action. 
+    2) RunTime Polymorphism: Method overriding is a example of it. Java compile the code and during the Runtime 
+       it is been decided which method to call in case of overriding. 
