@@ -15,5 +15,9 @@ what is abstract ?
 > We can not create object of Abstract classes. It can be inherited and base class must have to provide 
   implementation for all the abstract methods of super class. 
 > Abstract class can also contains normal methods. 
+> We can provide implement of abstract methods inside the abstract class using inner class. Just create a inner 
+  class inside abstract class and extends abstract class. We can also use anonymouse inner class for providing 
+  implementation for abstract methods.
+> Abstract class can extends/inherite another abstract class.
 > Syntax for abstract class is:
   public abstract class class_name{}

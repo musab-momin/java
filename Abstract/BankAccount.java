@@ -10,4 +10,18 @@ public abstract class BankAccount {
     protected abstract void creditAmount(double amount);
 
     protected abstract void withDrawn(double amount);
+
+    // we can provide implementation of abstract using inner class also
+    public class DefaultImplementation extends BankAccount {
+
+        @Override
+        protected void creditAmount(double amount) {
+
+        }
+
+        @Override
+        protected void withDrawn(double amount) {
+
+        }
+    }
 }
