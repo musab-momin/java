@@ -1,0 +1,24 @@
+what is(are) wrapper classes ?
+> When we say Java is a Object Oriented Programming language. It is 99.9 percent correct claim, you must be 
+  wondering why, well because Java support primitive data types like byte, short, int, boolean, char, float and 
+  double. These primitive means they are for computers. We don't need Heap memory or objects to use them they are
+  directly stored inside stack memory. 
+> In Java there are some other libraries which works only with objects. So what would you do If you want to work 
+  with those libraries and want to store some variale which are of type int, float or boolean etc. 
+> To solve this problem Java gives a wrapper class for each primitive datatype. These classes are known as wrapper
+  classes.
+> We have 2 concept related to wrapper classes: 
+    1) Boxing: 
+        > When we assign a primitive type variale to it's wrapper class this is known as boxing.
+          int x = 5;
+          Integer xObj = new Integer(x);
+        > We can also directly assign primitive variables to wrapper classes without using the object creation 
+          syntax. In that case boxing will happen automaticaly that's why we say autoboxing.
+          int x = 5;
+          Integer xObj = x;
+    2) Unboxing:
+        > This is a reverse of boxing, When we try to assign wrapper class obj to primitive datatype it is called
+           Unboxing and unlike boxing unboxing happens automatically that is why we refer to this as autounboxing
+
+           Integer xObj = 45;
+           int x = xObj;
