@@ -1,0 +1,28 @@
+What is enum ? 
+> enum are special feature in Java. enums are used to define constant values. which can be used to represent a 
+  fixed set of related values, such as days of the week, months of the year, or directions 
+  (NORTH, SOUTH, EAST, WEST).
+> It is a special type use to define pre set constant values. 
+> enum is also class it also inherit Object class and we can override Object class methods like toString(). 
+  We can also define our methods and Even Constructors. enum also allow us to define fields/properties inside it.
+> Those properties we can pass them to Constructors and It will set those values to constants. which we have 
+  defined. 
+
+  public enum SeverityLevel {
+    LOW(1, "L"),
+    MEDIUM(2, "M"),
+    HIGH(3, "H"),
+    CRITICAL(4, "C");
+
+    private final int levelCode;
+    private String shortForm;
+
+    SeverityLevel(int levelCode, String shortForm) {
+        this.levelCode = levelCode;
+        this.shortForm = shortForm;
+    }
+  }
+
+> In the above code we have 2 instance variables. LOW, MEDIUM, HIGH and CRITICAL these are constant object of 
+  SeverityLevel enum. To set instance values to these constant objects we have parameterised constructor also. 
+> We have naming convention for enum constants they should be typped in uppercase.
