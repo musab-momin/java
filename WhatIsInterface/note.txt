@@ -1,0 +1,74 @@
+What is interface ?
+> In Java, interface is like a contract which provides all the methods without dectating its implementation. 
+  Classes which inherites interface will must have to provide the defination/implementation of methods.
+> Interface can consist 3 types of methods:
+    1) default methods: This is a special type of method which is prefixed as `default` and these methods are 
+                        concrete methods. 
+    2) static method: These are related to interface not to the instance of it.
+    3) normal method: As interface does not allow normal methods to define their body all the normal methods of 
+                      interface are abstract in nature.
+> A class can implement more then 1 interface like this Java solved the problem of multiple inheritance.
+> Interface can also inherit another interface but unlinke class, interface can only inherit single interface. 
+  Just like class can inherit only single class. 
+> When we say Java solve the multiple inheritance problem by using interface then we have to consider this edge  
+  case which is, Suppose we have class which implements 2 interfaces and these 2 interfaces has default method 
+  with same name in that case the inherited class must have to override this default method and If you want to 
+  call the interface default method you can do this by using super.
+  interface_name.super.default_method_name();
+> To inherit interface class does not use extends keyword instead of extends we have to use `implements` keyword. 
+  But when interface inherit another interface we have use `extends` keyword.
+> A class can inherit another class, abstract class and multiple interfaces at a time.
+> One more edge case consider a class which inherit a abstract class and implements interface and both of them 
+  have method with same name.
+
+  abstract class AbstractClass {
+    abstract void show(); // Abstract method
+  }
+
+  interface InterfaceA {
+    default void show() {
+        System.out.println("InterfaceA default show()");
+    }
+  }
+
+> In this case when class must have to provide defination for show() method as AbstractClass needs it. In other 
+  words AbstractClass method will have higher precedance over interface method. That is the reason despite we 
+  have defination of show() method from interfaceA still we have to override show() method in base class and this
+  method will override both the show() methods. 
+
+> Let consider same scenario but this time AbstractClass will provide the concrete show() method and interface 
+  will provide abstract show() method.
+
+  abstract class AbstractClass {
+    void show() {
+        System.out.println("AbstractClass concrete show()");
+    }
+  }
+
+  interface InterfaceA {
+    default void show() {
+        System.out.println("InterfaceA default show()");
+    }
+  }
+
+> In this case also AbstractClass method will take higher precedance over Interface method and we have a choice 
+  in base class is bound to provide defination for show() method as we already have one implementation of show()
+  method in AbstractClass but if base class want it can @override the show() method. 
+
+What's the difference between AbstractClass and Interface ? 
+> At first galance both AbstractClass and Interface looks same, as they both provide abstract methods and 
+  inherited class provide the implementation for those classes. But both of them are different and have different
+  usecases.
+> Multiple Inheritance: We can achive multiple inheritance using interface as classes can implements more then 
+  one interface but we can't do this in abstract class.
+> Methods: Interface can have concrete methods in the form of default and static methods but it can not have 
+  noraml concrete methods, AbstractClass also has static method and normal concrete methods but it does not have 
+  default method.
+> Fields(Variables): Interface can only have static final fields, whereas AbstractClass can have instance and 
+  static variables. 
+> Constructor: Interface does not have any Constructor, whereas AbstractClass has Constructor which can be called 
+  during object creation of derived class. 
+> Inheritance design: This is important defference interface is used to when we want to give behavior to our class
+  like flyable, Comparable and Serializable. AbstractClass defines `is-a` relationship and provide a common base 
+  class with shared state or behavior, like Shape, Animal. 
+  
