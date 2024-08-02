@@ -1,0 +1,39 @@
+What is Lambda Expression ?
+> Before we get to Lambda Expression we must first understand the types of interfaces in Java. In Java we have 
+  3 types of interfaces 
+  1) NormalInterface
+  2) FuntionalInterface: When our interface has only one abstract method then we called this interface as 
+     FuntionalInterface. It is also known as SAM(Single abstract method). 
+  3) MarkerInterface: When we don't have anything inside interface (not methods, default methods, fields) this
+     type of interface is known as MarkerInterface.
+> As we known we can't make object from interface. We need a class which inherits the interface then only we can 
+  create object from it. These class can be of any type normal class, Inner Class or static Inner class or 
+  Anonymouse InnerClass. 
+> In AnonymouseInnerClass we don't even need to use the implements keyword. It looks something like this.
+  interface Greetable {
+    void sayGreet();
+  }
+
+  Greetable arabicGreet = new Greetable() {
+        @Override
+        public void sayGreet() {
+            System.out.println("Assalamualikum");
+        }
+    };
+> Lambda Expression is nothing but a stytactical sugar for above expression. instead of defining the inner class 
+  and then overriding the method. we can directly do this without writing the explicit code .
+  
+  interface Greetable {
+    void sayGreet();
+  }
+
+  Greetable urduGreet = () -> System.out.println("Adaab");
+  urduGreet.sayGreet();
+
+> The above Expression is Lambda Expression. What we have done is first we removed the object creation syntax. 
+  new Greeting() after that we declared a method without parameter (as it is in interface) and provided the 
+  implementation for it. We need {} curly braces for method but If our method has one single line then we can  
+  remove them also, so we did that. This sugar syntax is possible only because we have a FuntionalInterface 
+  as this interface has only single method so Java knowns what ever implementation we are doing it will be for 
+  that one method. If we have multiple methods in interface then Java can not guess which method we are overriding
+  That is why LambdaExpression is only possible with FuntionalInterface.
