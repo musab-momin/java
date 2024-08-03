@@ -1,0 +1,72 @@
+What is Exception ? 
+> An Exception is unwanted behaviour of code which breaks/stop the execution of program. 
+> It is a developers responsibility to handle these cases/scenarios in code. So if the expection occurs it won't
+  affect the execution of program. 
+> We have 2 types of exceptions in Java:
+    1) CheckedExceptions: These exceptions are compile time exceptions. You can understand this is as something 
+       or some rules have been broken by your code. For example for inhertiance you used keyword `extend` instead
+       of `extends` so java won't compile your code and raise this error to you. So checked means checked by 
+       JVM or Java. 
+    2) UncheckedExceptions: These exceptions are logical errors which occurs during the runtime of your program.
+       for example you took input from user to perform division but user gave you 0 for division. Well this 
+       is a logical error and when you try to divide a number of 0 your code will thorw and exception and it 
+       stop working.
+> Well compile time exceptions don't need any handling because Java will tell you about them or in most cases your
+  IDE will point that out for you. But for runtime exceptions we have to handle. To do so we have a special 
+  concept called try and catch. 
+> try is block of code {}. you put doubtfull or exception prone code into this block and by doing this you are 
+  telling Java to try this code but if you get any error/expection then use the code inside catch block. So catch 
+  is also a Block of code but it looks similar to method as it takes one parameter it can be any time of exception.
+  This catch block will run if your code has Error. 
+> In try block as soon as Java hits the exceoption it will break/stop the execution for try block and jumps on 
+  catch block. For example you have 5 lines of code in try block and line 3 made the exception then Java won't 
+  executed line 4 and 5 rather it will directly jumps to catch block. 
+> So in try block we write only that part which we think can made exception. You can add normal code in try block 
+  for fun but it don't make any sense to do this in real projects.
+> As I said catch takes exception as parameter, In Java we have multiple objects of UncheckedExceptions for e.g: 
+  ArithmaticOperation Exception, ArrayOutOfBound Exception and more. We also have a class called Exception 
+  which is a parent of all the Checked or Unchecked expections. 
+> So we understand that we use try and catch blcok combination for handling exceoptions. In this combination we 
+  are allowed to use only one try block but we can use multiple catch block. 
+> Why do we need multiple catch blocks, well to answer this question consider a scenario where you want to do the 
+  artihmatic operation and reading values from array. In this case you known there can be 2 types of exceptions 
+  ArithmaticOperationException and ArrayOutOfBoundException and you want to handle them both. To do so you have 
+  two solution you can write a single catch block which has Exception class parameter. As Exception is the 
+  parent class for all exceptions it will handle all types of exceptions well in this case you won't be able 
+  to show a particular message to user because you will recive both the excpetion in the catch block but what 
+  if you want to handle ArithmaticOperationException in different way and ArrayOutOfBoundException in different 
+  way for that you need to add condition for checking the exception type then you will do separate actions for 
+  them. Another solution for this is use 2 catch blocks first catch block will take ArithmaticOperationException 
+  as parameter, so this block will execute only if there is ArithmaticOperationException in try block and second 
+  catch block will take ArrayOutOfBoundException as parameter, so this block will execute only if there is 
+  ArrayOutOfBoundException in try block.
+> What if you got an error inside catch block then remember it will break the program because expcetions are 
+  handeled only for try block code. Apart from this if there is an error in your program it will break the program
+  If you are doubtfull for the catch block code also then you can add another try/catch block inside the catch
+  block. 
+
+What is throw ? 
+> It is not only Unchecked or runtime errors which can break our program, we can do this by our own also :).
+  It may sound silly but yes there may be point in our program when we want to throw and exception to do so 
+  we use `throw` keyword. 
+> throw is use to throw an excpetion explicitly in program. suppose you want to restrict user which are below 
+  14 years to use your program, so you took the age from user and if user has enter number which is less then 
+  14 then you can throw any expception and can terminate the program in catch block. 
+> Well when you throw any expection always add catch block to handle that exception. 
+> In most cases when we throw excpetion we need our own exception, in our example for this age restriction 
+  we want to throw Age restriction exception.
+> We can only throw expceptions (custom or prdefine) apart from this we can't throw anything.
+
+Custom Exception ? 
+> To create your own excpetion we have to create a class. create any class and extends the Exception class. 
+> We extends Exception class because in java every excpetion is a base class of Exception.
+
+
+What is throws ?
+> throws is a keyword used for ducking expcetions. In simple word you know if you have any exception you must
+  handle it but what if you don't want to handle it. in that case you can throws the exception.
+> throws expception is use with methods and when a method throws excpetion then who ever is calling it needs 
+  to handle expception (try/catch). For example you have one method in class which has CheckedException 
+  but you don't want to handle it. Then you can use throws and who ever is calling that method needs to handle 
+  that exception.
+  
