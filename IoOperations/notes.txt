@@ -1,0 +1,52 @@
+User input or Io operations ?
+> To take user input from console or keyboard or read data from file for all this operations are known as 
+  IoOperations (Input output Operations).
+> To do this we have three methods or ways: 
+    1) InputStream read()
+    2) BufferedReader()
+    3) Scanner 
+
+InputStream read():
+> InputStream is class which deals with this IoOperations this class has one method called read(). By using this 
+  we can take input from user's console. 
+> This methods throws IoException so we have to handle it. 
+> It has some limitations to it, 
+    1) It takes only single later as input.
+    2) It reaturn the ascii value of that charater or number. 
+> read() is not ideal when it come's to deal with IoOperations.
+
+BufferedReader():
+> This is really a greate upgrade compare to InputStreams read() method. BufferedReader is used as a wrapper 
+  around different types of IoClasses. For example we can use BufferedReader to read data from file, we can also 
+  use it for reading data from console/user. 
+> It is possible because BufferedReader takes object of type `Reader` it is parent class for IoOperations
+  classes.
+> A buffer is a temporary storage area in memory used to hold data while it is being transferred from one place 
+  to another. In the context of I/O operations, a buffer helps in managing data transfer between the program and 
+  an I/O device (like a file on disk, network socket, etc.) efficiently.
+> BufferReader is more effeint for doing IoOperations because it does not read data one character after another 
+  character rander it has special memory space called Buffer it store the data our their and once the Buffer 
+  is full then it perform the IoOperation. Suppose you are reading data from file so BufferReader will read the 
+  data in chucks. The default size of this chunk is 8kb and we can also increase or decrease it. So BufferReader 
+  is like a bucket which is use to take water from well. 
+> To use it we have to create object of it and it's constructer takes object of Reader class. In our example 
+  we are going to use InputStream as InputStream is also a base/child class of Reader class. 
+> It gives us one method called readLine() which is used to read a complete line from InputStream (in our case 
+  console or users keyboard). 
+> Just like read() method readLine also throws IoException.
+> After we have done our operations we need to call close() method of BufferReader to close the Buffer. This is 
+  for preventing memory leak and setting the resource free.
+
+
+Scanner Class: 
+> Scanner is also used to read data from different source of input stream like: console(system.in), files and 
+  strings more. 
+> Compare to other two methods Scanner is much easier to use and it is more convenient. 
+> To use it obviously we have to create a object of it. It also takes InputStream as parameter, In our case we 
+  want to read data from users keyboard so we are going to use System.in.
+> It gives differnt methods for reading different types of data. 
+  scanner.readNext(); //for reading strings
+  scanner.read(); //for reading single character 
+  scanner.readInt(); //for reading interfer value
+  scanner.readDouble(); //for reading decimal values
+> we must have to call scanner.close() method to close the scanner.
