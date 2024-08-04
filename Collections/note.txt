@@ -1,0 +1,26 @@
+What is JCF ? 
+> Java Collection Frameword is a essential part of core java. It provides a set of classes to work store and 
+  use data in different structures.
+> Collection is the root interface for collections hierarchy.
+> JCF provides 3 things to us: 
+    1) Interface: Abstract datatypes which represent differnt types of collections. (List, Set and Map).
+    2) Classes: Concrete classes which provides implementation for all interfaces (ArrayList, HashSet, HashMap).
+    3) Algorithms: Some basic Algorithms to perform of collections (sorting, searching).
+> We have couple of major/main interfaces in JCF which are: 
+    1) Collection Interface: Root interface of entire hierarchy.
+    2) List Interface: Ordered collection which allows duplicate element. 
+    3) Set Interface: Unordered colleciton which does not allow duplicate element.
+    4) Queue Interface: Collections that order elements in a specific order for processing.
+    5) Map Interface: Collection of key,value pair elements.
+> For each major interface we have some common implementation classes which are mostly and widly used. 
+    1) List Interface:
+        -ArrayList: Resizeable array implementation. Good for ranomd access and iteration.
+        -LinkedList: Double LinkList implementation. Good for fast insertion and deletion.
+    2) Set interface: 
+        -HashSet: Uses hash table for storage. Fast lookup but no ordering.
+        -LinkedHashSet: It also uses hash table for storage. Fast lookup and also maintain insertion order.
+        -TreeSet: Same as other two but it also sort element according to their natural order.
+    3) Map Interface: 
+        -HashMap: Uses hash table for storage. Fast lookup with keys but no ordering.
+        -LinkedHashMap: same as HashMap but it maintain insertion order.
+        -TreeMap: Same as other two but it also sort elements according to their natural order of keys.
