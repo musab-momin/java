@@ -1,0 +1,17 @@
+What is Comparator ? 
+> Comparator is interface which let us decide the custom sorting logic for any collection object. 
+> Bydefault each collection object has their own sorting logic for primitive type but for custom classes 
+  we have to define the sorting logic.
+> Even though for primitive collections have their own sorting logic some times we want to override it and for 
+  custom classes also we need to add sorting logic. Comparator is used in these conditions. 
+> As Comparator is interface but to be more precise Comparator is a FunationalInterface and has a method called 
+  compare. 
+> This method takes 2 paramter of type which we define through Comparator interface (Comparator<Integer>). 
+> This compare method sort elements by swaping them between each other. If comparison return 1 it swaps else don't.
+  For custom implementation for swaping we write our own condition, Return 1 if condition matches
+  and else return -1.
+> As Comparator is a FunationalInterface we can write it's implementation using LambdaExpression.
+> To use our custom sort logic we have to create object of Comparator and As each collection object has sort method 
+  and it takes Comparator as parameter, we just have to pass our Comparator object to collections sort method.
+  
+ 
