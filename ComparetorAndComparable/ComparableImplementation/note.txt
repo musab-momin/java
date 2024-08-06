@@ -1,0 +1,5 @@
+what is comparable ?
+> Comparable is also FunctionalInterface and it has a method called compareTo. It is used for adding custom 
+  sorting logic for custom classes.
+> All the primitive wrapper classes has their own implementation of Comparable.
+> Comparable logic can be override by using comparator on same class. 
