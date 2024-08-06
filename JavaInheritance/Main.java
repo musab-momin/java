@@ -1,3 +1,5 @@
+package JavaInheritance;
+
 
 class Calculator {
 
