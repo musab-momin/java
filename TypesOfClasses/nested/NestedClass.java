@@ -1,3 +1,4 @@
+package TypesOfClasses.nested;
 
 class Outer {
     private int x;

@@ -1,3 +1,4 @@
+package WhatIsSuper;
 
 class Bird {
     Bird() {

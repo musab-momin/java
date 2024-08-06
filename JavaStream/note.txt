@@ -1,0 +1,9 @@
+what is stream ? 
+> Stream is an interface which was indroduce in Java 1.8 and it has some new and cool functionalities. Which we 
+  can use with collections. 
+> Every collection object has stream() method which give us the new stream. A new stream is a copy of existing 
+  collection. 
+> On this given stream we can perform multiple methods and actions and it won't affect the orginal copy of our 
+  collection.
+> Some of the Stream methods are .map(), .filter() and .reduce().
+> All this methods use functional programming of Java.

@@ -1,3 +1,4 @@
+package TypesOfArray;
 
 public class Main {
 

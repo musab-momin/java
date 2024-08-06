@@ -1,3 +1,5 @@
+package WhatIsEncapsulation;
+
 class Student {
     private String name;
     private int rollno;

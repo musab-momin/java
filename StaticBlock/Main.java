@@ -1,3 +1,4 @@
+package StaticBlock;
 
 class Car {
     private static String category;

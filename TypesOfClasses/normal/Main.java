@@ -1,3 +1,4 @@
+package TypesOfClasses.normal;
 
 class Calculator {
   int x;
