@@ -15,7 +15,7 @@ what is string ?
 > If you payed attention on name where string stored is `String Constant Pool` it says constant. That is because  
   in Java Strings are constant or immutable in simple words you can not change the value of your String variable
   once you assigned it. 
-> To understand this in deep will one example here. 
+> To understand this in deep will take one example here. 
   String name = "Eliot";
   name = name + " alderson";
   System.out.print(name); 
@@ -28,7 +28,7 @@ what is string ?
 
 What is StringBuffer ?
 > StringBuffer is also a String which is collection of characters but unlike String StringBuffer is mutable. 
-  We can change the value of Strinbuilder's variable/object. 
+  We can change the value of StringBuffer's variable/object. 
 > We have different methods available which we can use to mutate/change the value. 
 > By default we have 16 characters capacity for StringBuffer object. Which means we can store upto 16 characters 
   in a Buffer Object. If you give value during initialisation then default buffer size will be string length + 16
